@@ -4,6 +4,19 @@ This directory contains the automated test suite for the core modules of **TheSi
 
 The current tests are focused on validating the most important analytical and decision-support components of the project. Their purpose is to improve reliability, reduce regressions, and support safer future changes.
 
+## Structure
+
+```text
+tests/
+├── test_signal_parser.py
+├── test_symbol_mapper.py
+├── test_instrument_profiles.py
+├── test_probability_model.py
+├── test_scoring.py
+├── test_main_flow.py
+└── README.md
+```
+
 ## Scope
 
 The test suite currently covers:
@@ -30,6 +43,10 @@ The test suite currently covers:
 
 - `test_scoring.py`  
   Validates the core evaluation workflow, including invalid setups, output structure, and decision classification.
+
+- `test_main_flow.py`
+  Tests the main signal-processing flow by validating how input is handled from parsing to final response generation.
+  It focuses on the interaction between the main orchestration logic and the core analytical modules, using mocked dependencies where needed.
 
 ## Purpose
 
