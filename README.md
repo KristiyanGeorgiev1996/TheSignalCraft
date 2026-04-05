@@ -37,13 +37,13 @@ The system does not execute trades automatically. Instead, it:
 ## Screenshots
 
 ### Signal analysis
-![Signal analysis](screenshots/signal-analysis.png)
+![Signal analysis](screenshots/screenshot-1.png)
 
 ### Project structure
-![Structure](screenshots/project-structure.png)
+![Structure](screenshots/screenshot-2.png)
 
 ### Bot interaction
-![Bot](screenshots/bot-interaction.png)
+![Bot](screenshots/screenshot-3.png)
 
 ---
 
