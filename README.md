@@ -1,11 +1,11 @@
 # TheSignalCraft
 
 <p align="center">
-  <b>Превръщане на сурови сигнали в обосновани решения.</b>
+  <b>Turning raw signals into reasoned decisions.</b>
 </p>
 
 <p align="center">
-  Модулен Python проект за оценка на трейдинг сигнали чрез технически анализ, скоринг логика и вероятностно базирана подкрепа при вземане на решения.
+  A modular Python project for evaluating trading signals through technical analysis, scoring logic, and probability-based decision support.
 </p>
 
 <p align="center">
@@ -21,47 +21,45 @@
 
 ---
 
-## Обща информация
+## Overview
 
-**TheSignalCraft** е модулен проект за оценка на трейдинг сигнали, създаден с цел подпомагане на анализа на ръчно подадени сигнали.
+**TheSignalCraft** is a modular project designed to evaluate manually submitted trading signals.
 
-Системата не изпълнява автоматично сделки. Вместо това:
-- извлича пазарни данни  
-- прилага технически индикатори  
-- оценява сигнала чрез скоринг модел  
-- изчислява вероятност за достигане на TP преди SL  
-- връща структурирано решение  
+The system does not execute trades automatically. Instead, it:
+- retrieves market data  
+- applies technical indicators  
+- evaluates the signal using a scoring model  
+- estimates the probability of TP being reached before SL  
+- returns a structured decision  
 
 ---
 
-## Снимки
+## Screenshots
 
-> Постави изображенията в папката `screenshots/`
-
-### Анализ на сигнал
+### Signal analysis
 ![Signal analysis](screenshots/signal-analysis.png)
 
-### Структура на проекта
+### Project structure
 ![Structure](screenshots/project-structure.png)
 
-### Взаимодействие с бота
+### Bot interaction
 ![Bot](screenshots/bot-interaction.png)
 
 ---
 
-## Основни функционалности
+## Key Features
 
-- 📊 Анализ на пазарни данни (multi-timeframe)  
-- 📈 Технически индикатори (EMA, RSI, MACD, ATR, ADX, Bollinger Bands)  
-- 🧠 Скоринг система за оценка на сигнала  
-- 🎯 Вероятностен модел (TP vs SL)  
-- ⏱️ Оценка на продължителност  
-- 🗂️ Запис на резултати (CSV + SQLite)  
-- ⚙️ Модулна архитектура  
+- 📊 Multi-timeframe market analysis  
+- 📈 Technical indicators (EMA, RSI, MACD, ATR, ADX, Bollinger Bands)  
+- 🧠 Signal scoring system  
+- 🎯 Probability model (TP vs SL)  
+- ⏱️ Trade duration estimation  
+- 🗂️ Result logging (CSV + SQLite)  
+- ⚙️ Modular architecture  
 
 ---
 
-## 🔄 Аналитичен поток
+## 🔄 Processing Flow
 
 ```text
 Signal Input
@@ -79,3 +77,123 @@ Probability Model
 Final Decision
      ↓
 Logging
+```
+
+---
+
+## Decision Model
+
+Signals are classified into:
+
+- REJECT  
+- RISKY  
+- ACCEPT  
+- STRONG TRADE  
+
+---
+
+## Project Structure
+
+```text
+TheSignalCraft/
+├── app/
+│   ├── main.py
+│   ├── config.py
+│   ├── indicators.py
+│   ├── instrument_profiles.py
+│   ├── logger.py
+│   ├── market_data.py
+│   ├── probability_model.py
+│   ├── scoring.py
+│   ├── signal_parser.py
+│   └── symbol_mapper.py
+├── screenshots/
+├── tests/
+├── .env.example
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+---
+
+## 🧪 Example Analysis
+
+**Input:**
+
+```text
+/signal GBPUSD BUY 1.2750 1.2820 1.2700
+```
+
+**Analysis:**
+
+- Trend: bullish  
+- Momentum: positive  
+- RSI: within normal range  
+- ADX: strong trend  
+- Risk/Reward: acceptable  
+
+**Result:**
+```
+Score: 72/100
+Decision: ACCEPT
+Probability: 61.5%
+Estimated Duration: ~5 H1 candles
+```
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/KristiyanGeorgiev1996/TheSignalCraft.git
+cd TheSignalCraft
+pip install -r requirements.txt
+```
+
+---
+
+## Configuration
+
+Create a `.env` file:
+
+```env
+TELEGRAM_TOKEN=your_telegram_bot_token_here
+```
+
+---
+
+## Run
+
+```bash
+python main.py
+```
+
+---
+
+## Principles
+
+- Modularity  
+- Transparency  
+- Practicality  
+- Risk awareness  
+
+---
+
+## Limitations
+
+- Does not execute trades  
+- Does not guarantee profit  
+- Uses a heuristic probability model  
+
+---
+
+## License
+
+MIT License  
+
+---
+
+## Disclaimer
+
+This project is intended for educational purposes only.  
+It does not provide financial advice.
