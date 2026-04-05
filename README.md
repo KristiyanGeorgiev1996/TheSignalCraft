@@ -108,7 +108,17 @@ TheSignalCraft/
 │   ├── signal_parser.py
 │   └── symbol_mapper.py
 ├── screenshots/
+│   ├── screenshot-1.png
+│   ├── screenshot-2.png
+│   └── screenshot-3.png
 ├── tests/
+│   ├── test_instrument_profiles.py
+│   ├── test_main_flow.py
+│   ├── test_probability_model.py
+│   ├── test_scoring.py
+│   ├── test_signal_parser.py
+│   ├── test_symbol_mapper.py
+│   └── READMe.md
 ├── .env.example
 ├── .gitignore
 ├── README.md
