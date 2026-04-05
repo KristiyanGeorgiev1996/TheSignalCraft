@@ -9,13 +9,14 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/github/license/KristiyanGeorgiev1996/TheSignalCraft" alt="License">
-  <img src="https://img.shields.io/github/repo-size/KristiyanGeorgiev1996/TheSignalCraft" alt="Repository size">
-  <img src="https://img.shields.io/github/last-commit/KristiyanGeorgiev1996/TheSignalCraft" alt="Last commit">
-  <img src="https://img.shields.io/github/issues/KristiyanGeorgiev1996/TheSignalCraft" alt="Issues">
-  <img src="https://img.shields.io/badge/status-active-success" alt="Status">
-  <img src="https://img.shields.io/badge/focus-signal%20evaluation-informational" alt="Focus">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/architecture-modular-success">
+  <img src="https://img.shields.io/badge/focus-signal%20evaluation-informational">
+  <img src="https://img.shields.io/badge/domain-trading-orange">
+  <img src="https://img.shields.io/badge/data-yfinance-lightgrey">
+  <img src="https://img.shields.io/github/license/KristiyanGeorgiev1996/TheSignalCraft">
+  <img src="https://img.shields.io/github/repo-size/KristiyanGeorgiev1996/TheSignalCraft">
+  <img src="https://img.shields.io/github/last-commit/KristiyanGeorgiev1996/TheSignalCraft">
 </p>
 
 ---
