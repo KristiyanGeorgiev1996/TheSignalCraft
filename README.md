@@ -119,11 +119,33 @@ TheSignalCraft/
 │   ├── test_signal_parser.py
 │   ├── test_symbol_mapper.py
 │   └── READMe.md
+├── docs/
+│   ├── architecture.md
+│   ├── workflow.md
+│   ├── modules.md
+│   ├── testing.md
+│   ├── configuration.md
+│   ├── limitations.md
+│   └── READMe.md
 ├── .env.example
 ├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
+---
+
+## Documentation
+
+For a more detailed technical breakdown of the project, see the documentation below:
+
+- [Documentation Overview](docs/README.md)
+- [System Architecture](docs/architecture.md)
+- [Processing Workflow](docs/workflow.md)
+- [Module Reference](docs/modules.md)
+- [Testing Strategy](docs/testing.md)
+- [Configuration Guide](docs/configuration.md)
+- [Known Limitations](docs/limitations.md)
+
 ---
 
 ## 🧪 Example Analysis
